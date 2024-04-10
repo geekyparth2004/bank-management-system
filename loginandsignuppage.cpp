@@ -4,9 +4,8 @@
 using namespace std;
 vector <string> username;
 vector<string> passwords;
-int main()
-{
-    string name, uname, p1, p2;
+
+void SignUp(string name, string uname, string p1, string p2){
     cout<<"Enter Your Name: ";
     getline(cin,name);
     cout<<endl<<"Create a user name: ";
@@ -24,8 +23,8 @@ int main()
     else passwords.push_back(p1);
     cout<<endl<<"Submit";   
 }
-
-
-
-  
+int main()
+{
+    string name, uname, p1, p2;
+    SignUp(name,uname,p1,p2);
 }
