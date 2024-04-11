@@ -52,11 +52,14 @@ int main(){
 
     if(n==1)
     {
-        
+    string name, uname, p1, p2;
+    SignUp(name,uname,p1,p2); 
     }
         
-    
+    else if(n==2)
+    {
     string name, uname, pass, re_pass;
-    SignIn(uname,pass)
+    SignIn(uname,pass) 
+    }
     
 }
