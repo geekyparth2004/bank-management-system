@@ -22,8 +22,6 @@ bool login(sqlite3* db, const string& username, const string& password) {
     cout << "Login failed. Incorrect username or password." << endl;
     return false;
 }
-
-// Function to handle sign up
 bool signUp(sqlite3* db, const string& username, const string& password) {
     sqlite3_stmt* stmt;
     string query = "INSERT INTO users (username, password) VALUES (?, ?)";
